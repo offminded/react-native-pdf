@@ -359,6 +359,7 @@ export default class PdfView extends Component {
                 maxToRenderPerBatch={1}
                 renderScrollComponent={(props) => <ScrollView
                     {...props}
+                    nestedScrollEnabled={true}
                     centerContent={this.state.centerContent}
                     pinchGestureEnabled={false}
                 />}
